@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <title>Powering Your Metaverse Enabled World</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap"
+            rel="stylesheet">
+        
+       <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'fonts/css/fontawesome-all.min.css' %}">
+        <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+        <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    
+    </head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="headerItems">
+                <nav class="navbar navbar-expand-custom navbar-dark bg-dark">
+                    <div class="navItem togglerBtn">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars text-white"></i>
+                        </button>
+                    </div>                                       
+
+                    <div class="brandLogo">
+                        <a class="navbar-brand" href="#"><img src="{% static 'media/logo.png' %}" alt="Dispute Bills"></a>
+                    </div>
+                    <div class="connectBtn">
+                        <div class="d-flex order-lg-1 ml-auto pr-2">
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item">
+                                    <a href="#">
+                                    <div class="badge bg-primary text-wrap">Connect <br> Wallet </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                                              <!--Navbar content-->
+                        <div class="navbar-collapse justify-content-start collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Profile</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#"><i class="fa fa-map"></i>Roadmap</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-coins"></i>Tokenomy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-users"></i>Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-gift"></i>Offers &amp; Promos</a>
+                                    </li>                                                        
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-question"></i>FAQ</a>
+                                    </li>                                    
+                            </ul>
+                        </div>
+                        <!--end of navbar content-->
+                </nav>           
+            </div>
+        </header>
+        <div class="parentHomeText">
+
+            <!--main menu start-->
+        
+            
+            <h1 style="font-size: 34px; text-align: center; font-weight: 600;">Coming Soon</h1>
+            <h1 style="text-align: center; padding: 15px; font-weight: 300;">Stay with us!</h1>
+
+        </div>
+        
+
+                    <!-- Footer configuration -->
+        <div id="footer-bar" class="footer-bar-1">
+            <a href="{% url 'meeting' %}"><i class="fa fa-vr-cardboard"></i><span>MEETING</span></a>
+            <a href="{% url 'games' %}"><i class="fa fa-gamepad"></i><span>GAMES</span></a>
+            <a href="{% url 'home' %}"><i class="fa fa-home"></i><span>HOME</span></a>
+            <a href="{% url 'nfts' %}"><i class="fa fa-shopping-cart"></i><span>NFT</span></a>
+            <a href="{% url 'assets' %}" class="active-nav" data-menu="menu-main"><i class="fa fa-gem"></i><span>ASSETS</span></a>
+        </div>
+
+    
+
+
+        <!-- Scripts-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script id="rendered-js" src="{% static 'scripts/main.js' %}"></script>
+
+    </div>
+
+
+</body>
+</html>

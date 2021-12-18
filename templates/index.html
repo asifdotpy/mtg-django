@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <title>Powering Your Metaverse Enabled World</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap"
+            rel="stylesheet">
+        
+       <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'fonts/css/fontawesome-all.min.css' %}">
+        <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+        <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    
+    </head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="headerItems">
+                <nav class="navbar navbar-expand-custom navbar-dark bg-dark">
+                    <div class="navItem togglerBtn">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars text-white"></i>
+                        </button>
+                    </div>                                       
+
+                    <div class="brandLogo">
+                        <a class="navbar-brand" href="#"><img src="{% static 'media/logo.png' %}" alt="Dispute Bills"></a>
+                    </div>
+                    <div class="connectBtn">
+                        <div class="d-flex order-lg-1 ml-auto pr-2">
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item">
+                                    <a href="#">
+                                    <div class="badge bg-primary text-wrap">Connect <br> Wallet </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                                              <!--Navbar content-->
+                        <div class="navbar-collapse justify-content-start collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Profile</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#"><i class="fa fa-map"></i>Roadmap</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-coins"></i>Tokenomy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-users"></i>Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-gift"></i>Offers &amp; Promos</a>
+                                    </li>                                                        
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-question"></i>FAQ</a>
+                                    </li>                                    
+                            </ul>
+                        </div>
+                        <!--end of navbar content-->
+                </nav>           
+            </div>
+        </header>
+        <div id="mainContent" class="mainContent">
+            <div class="mainContentWrapper">
+                <div class="pageWrapper" id="homeVideo">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="{% static 'media/video.mp4' %}" type="video/mp4">
+                            your browser does not support webm video.
+                    </video>
+                </div>
+                <div class="parentHomeText">
+                      <div class="childHomeText">
+                       <div class="companyName">
+                          <h1">Meta2Gether</h1>
+                       </div>
+                        <div class="companySlogan">
+                            <h4>Powering Your Metaverse Enabled World</h4>
+                        </div>
+                        <div class="joinBtn">
+                            <button class="button-23" role="button">Join The Meta</button>
+                        </div>
+                    </div>
+                </div>         
+                <!-- Section for content-->
+                <div style="top:95%; position: absolute;" class="articleContent">
+              
+                <!-- /.row -->
+              
+                <!--  image right  -->
+                <div class="contentMargin">
+                    <div class="row row-1">
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 order-md-1 row-text">              
+                        <div class="row align-items-center h-100">
+                        <div class="col">
+                            <h1 class="display-3">YOUR NFT IS YOUR IDENTITY</h1>
+                            <p class="lead">Meta2Gether introduces a decentralized way to join and host your meeting into the Metaverse. Your NFT is your identity. Grab one before it's too late.</p>
+                        </div>
+                        </div>
+                
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 order-md-6 row-image">
+                
+                        <img src="{% static 'media/article.jpg' %}" alt="" class="w-100 rounded" />
+                    </div>
+                
+                    </div>
+                    <div class="row row-2">
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 order-md-1 row-text">              
+                        <div class="row align-items-center h-100">
+                            <div class="col">
+                            <h1 class="display-3">EXPLORE THE NEW WORLD WITH LOTS OF POSSIBILITIES</h1>
+                            <p class="lead">Choose your custom virtual environment to meet people. Explore the new world with us and the blockchain technology.</p>
+                            </div>
+                        </div>
+                    
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6 order-md-6 row-image">
+                    
+                        <img src="{% static 'media/article2.jpg' %}" alt="" class="w-100 rounded" />
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- /.row -->
+                  <!-- we are on the news channel -->
+
+                <div class="newsLink">
+                    <div>
+                        <h1 style="text-align: center; font-family:'Times New Roman', Times, serif; margin-top: 50px;">NEWS ABOUT US</h1>
+                    </div>
+                    <div class=newslogo style="text-align: center;">
+                        <a class="news" target="_blank" href="https://www.cnbc.com/2021/12/09/bill-gates-metaverse-will-host-most-virtual-meetings-in-a-few-years.html"> <img src="{% static 'media/news/cnbc.png' %}" height="70px;" width="100px;"> </a>
+                        <a class="news" target="_blank" href="https://fortune.com/2021/12/10/bill-gates-metaverse-office-meetings/"> <img src="{% static 'media/news/fortune-logo-2016-840x485.jpg' %}" height="70px;" width="100px;"> </a>
+                        <a class="news" target="_blank" href="https://www.techradar.com/news/bill-gates-predicts-that-most-meetings-will-move-to-the-metaverse-within-3-years"> <img src="{% static 'media/news/techradar.jpg' %}" height="110px;" width="110px;"> </a>
+                        <a class="news" target="_blank" href="https://www.usatoday.com/story/tech/2021/12/10/bill-gates-metaverse-work-meetings-predictions/6459911001/"> <img src="{% static 'media/news/USAToday.png' %}" height="110px;" width="110px;"> </a>
+                    </div>
+                </div>  
+                <div class="comingSoonNews">
+                    <h1>More coming soon</h1>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+            
+
+                    <!-- Footer configuration -->
+        <div id="footer-bar" class="footer-bar-1">
+            <a href="{% url 'meeting' %}"><i class="fa fa-vr-cardboard"></i><span>MEETING</span></a>
+            <a href="{% url 'games' %}"><i class="fa fa-gamepad"></i><span>GAMES</span></a>
+            <a href="{% url 'home' %}" class="active-nav"><i class="fa fa-home"></i><span>HOME</span></a>
+            <a href="{% url 'nfts' %}"><i class="fa fa-shopping-cart"></i><span>NFT</span></a>
+            <a href="{% url 'assets' %}" data-menu="menu-main"><i class="fa fa-gem"></i><span>ASSETS</span></a>
+        </div>
+    
+
+
+        <!-- Scripts-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script id="rendered-js" src="{% static 'scripts/main.js' %}"></script>
+
+    </div>
+
+
+</body>
+</html>
