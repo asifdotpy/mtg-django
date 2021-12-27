@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-oh+!s9=9pq@xkbkx22rxum!u&r)nz#29u6%lkelh4lyktwhj8=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['meta2gether.io',
+                'www.meta2gether.io']
 
 
 # Application definition
